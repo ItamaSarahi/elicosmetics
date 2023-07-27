@@ -62,8 +62,8 @@ orders(app)
 //INVOCAR A LOS SOCKETS
 ordersDeliverySocket(io);
 
-server.listen(3000,'192.168.1.81'|| 'localhost', function(){
-    console.log('Aplicacion de NodeJS '+ port+ ' Iniciada...')
+server.listen(process.env.PORT || 3000, function() {
+    console.log('Aplicacion de NodeJS ' + port + ' Iniciada...');
 });
 
 
