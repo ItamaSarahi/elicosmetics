@@ -1,0 +1,141 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:theme="@style/Theme.MaterialComponents.Light.NoActionBar"
+    tools:context=".activities.MainActivity">
+    <LinearLayout
+        android:id="@+id/linearParte1"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="778dp"
+            android:background="@drawable/fondo">
+
+            <ImageView
+                android:layout_width="406dp"
+                android:layout_height="330dp"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="5dp"
+                android:src="@drawable/logo" />
+
+            <LinearLayout
+                android:id="@+id/linearParte3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="360dp"
+                android:layout_marginEnd="16dp"
+                android:orientation="vertical">
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:id="@+id/txtInputUsuario"
+                    style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="@string/ingresa_tu_email"
+                    app:hintTextColor="#070707"
+                    app:startIconDrawable="@drawable/ic_email"
+                    tools:ignore="MissingClass">
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/edtEmail"
+                        android:layout_width="match_parent"
+                        android:layout_height="49dp"
+                        android:fontFamily="@font/poppins_medium"
+                        android:inputType="textEmailAddress"
+                        android:background="@drawable/edittext_custom"
+                        android:textSize="15sp" />
+                </com.google.android.material.textfield.TextInputLayout>
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:id="@+id/txtInputPassword"
+                    style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="Ingresa tu contraseña"
+                    app:startIconDrawable="@drawable/ic_lock">
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/edtPassword"
+                        android:layout_width="match_parent"
+                        android:layout_height="57dp"
+                        android:background="@drawable/edittext_custom"
+                        android:fontFamily="@font/poppins_medium"
+                        android:inputType="textPassword"
+                        android:textColor="#FFF7F7"
+                        android:textSize="15sp" />
+
+                </com.google.android.material.textfield.TextInputLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/linearParte4"
+                android:layout_width="400dp"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/linearParte3"
+                android:layout_marginTop="520dp"
+                android:layout_marginEnd="10dp"
+                android:gravity="end">
+
+                <Button
+                    android:id="@+id/btnIniciarSesion"
+                    android:layout_width="160dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginEnd="120dp"
+                    android:background="@drawable/rounded_button"
+                    android:backgroundTint="#FFC0CB"
+                    android:drawableTint="#fff"
+                    android:fontFamily="@font/poppins_medium"
+                    android:text="INICIAR SESIÓN"
+                    app:iconTint="#0A090B" />
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:id="@+id/linearParte4.1"
+                android:layout_width="400dp"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/linearParte3"
+                android:layout_marginTop="580dp"
+                android:layout_marginEnd="10dp"
+                android:gravity="end">
+
+                <Button
+                    android:id="@+id/btnRegistrar"
+                    android:layout_width="160dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginEnd="120dp"
+                    android:backgroundTint="#FFC0CB"
+                    android:drawableTint="#fff"
+                    android:fontFamily="@font/poppins_medium"
+                    android:text="REGISTRARME"
+                    android:background="@drawable/rounded_button"
+                    app:iconTint="#0A090B" />
+            </LinearLayout>
+
+            <ImageView
+                android:id="@+id/google"
+                android:layout_width="48dp"
+                android:layout_height="48dp"
+                android:layout_margin="20dp"
+                android:src="@drawable/google" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="153dp"
+                android:gravity="center_horizontal">
+
+                <!-- Agrega elementos adicionales aquí si es necesario -->
+
+            </LinearLayout>
+        </FrameLayout>
+    </LinearLayout>
+
+</RelativeLayout>

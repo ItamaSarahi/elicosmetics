@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="15dp"
+    android:background="#FFFFFF"
+    android:orientation="vertical">
+
+    <ImageView
+        android:id="@+id/imageRol"
+        android:layout_width="match_parent"
+        android:layout_height="120dp"
+        android:src="@drawable/usuario" />
+
+    <TextView
+        android:id="@+id/text_rol"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="ROL"
+        android:textAlignment="center"
+        android:textColor="#020202"
+        android:textSize="16sp" />
+</LinearLayout>

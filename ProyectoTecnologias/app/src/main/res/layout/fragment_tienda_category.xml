@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".fragments.tienda.TiendaCategoryFragment">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#FFFFFF"
+        android:orientation="vertical">
+
+        <ImageView
+            android:id="@+id/imageview_category"
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:background="@color/gray_light"
+            android:src="@drawable/ic_image" />
+
+        <EditText
+            android:id="@+id/edittext_category"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="50dp"
+            android:layout_marginRight="20dp"
+            android:background="@drawable/edittext_custom"
+            android:hint="NOMBRE CATEGORIA"
+            android:inputType="text"
+            android:padding="15dp"
+            android:textColor="#000000"
+            android:textColorHint="#000000" />
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/btn_create"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom"
+        android:layout_marginLeft="18dp"
+        android:layout_marginTop="40dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginBottom="65dp"
+        android:background="@drawable/rounded_button"
+        android:backgroundTint="#FFC0CB"
+        android:text="CREAR CATEGORIA" />
+
+</FrameLayout>

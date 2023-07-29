@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:theme="@style/Theme.MaterialComponents.Light.NoActionBar"
+    tools:context=".activities.client.adress.map.activity_client_address_map">
+
+    <fragment
+        android:id="@+id/map"
+        android:name="com.google.android.gms.maps.SupportMapFragment"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_anchor="@+id/imageView"
+        app:layout_anchorGravity="center" />
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="55dp"
+        android:layout_height="55dp"
+        android:layout_gravity="center"
+        android:src="@drawable/my_location" />
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50dp"
+        android:layout_marginRight="30dp"
+        android:layout_marginLeft="30dp"
+        app:cardCornerRadius="10dp">
+        <TextView
+            android:id="@+id/textview_address"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Calle falsa con Carrera falsa"
+            android:maxLines="2" android:padding="10dp"
+            android:textAlignment="center"/>
+    </androidx.cardview.widget.CardView>
+
+    <Button
+        android:id="@+id/btn_accept"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginBottom="25dp"
+        android:background="@drawable/rounded_button"
+        app:backgroundTint="@color/pink"
+        android:fontFamily="@font/poppins_medium"
+        android:text="ACEPTAR"
+        android:textColor="#070707" />
+</androidx.coordinatorlayout.widget.CoordinatorLayout>
